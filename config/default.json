@@ -1,0 +1,66 @@
+{
+  "agent": {
+    "name": "TriangulateAgent",
+    "version": "0.1.0"
+  },
+  "defaults": {
+    "weights": {
+      "chip": 0.35,
+      "fundamental": 0.35,
+      "technical": 0.30
+    },
+    "markets": ["US", "TW", "HK"],
+    "analysisInterval": 300000,
+    "historyLimit": 100
+  },
+  "thresholds": {
+    "highConfidence": 0.8,
+    "mediumConfidence": 0.6,
+    "lowConfidence": 0.4,
+    "fraudRiskHigh": 0.7,
+    "fraudRiskMedium": 0.4
+  },
+  "signals": {
+    "STRONG_BUY": {
+      "min": 0.8,
+      "max": 1.0,
+      "positionSize": "重倉",
+      "riskLevel": "高"
+    },
+    "BUY": {
+      "min": 0.6,
+      "max": 0.8,
+      "positionSize": "標準",
+      "riskLevel": "中"
+    },
+    "HOLD": {
+      "min": 0.4,
+      "max": 0.6,
+      "positionSize": "觀望",
+      "riskLevel": "低"
+    },
+    "SELL": {
+      "min": 0.2,
+      "max": 0.4,
+      "positionSize": "標準",
+      "riskLevel": "中"
+    },
+    "STRONG_SELL": {
+      "min": 0.0,
+      "max": 0.2,
+      "positionSize": "重倉",
+      "riskLevel": "高"
+    }
+  },
+  "fraud": {
+    "consistencyThreshold": 0.3,
+    "liquidityTrapThreshold": 0.4,
+    "technicalFakeThreshold": 0.35,
+    "chipAnomalyThreshold": 0.4
+  },
+  "api": {
+    "model": "claude-opus-4-1",
+    "timeout": 30000,
+    "retries": 3
+  }
+}

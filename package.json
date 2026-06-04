@@ -1,0 +1,46 @@
+{
+  "name": "@ai-swarm/triangulate",
+  "version": "0.1.0",
+  "description": "AI Swarm Investing: 三維獵殺 - 籌碼+基本+技術三角印證投資信號",
+  "main": "src/Agent.Triangulate.js",
+  "type": "module",
+  "keywords": [
+    "ai-agent",
+    "workflow",
+    "investing",
+    "trading",
+    "swarm",
+    "triangulate",
+    "technical-analysis",
+    "fundamental-analysis",
+    "chip-analysis"
+  ],
+  "author": "pppeee861005",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pppeee861005/ai-swarm-triangulate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pppeee861005/ai-swarm-triangulate/issues"
+  },
+  "homepage": "https://github.com/pppeee861005/ai-swarm-triangulate#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.28.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.56.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/",
+    "dev": "node examples/01-basic.js",
+    "dev:advanced": "node examples/02-advanced.js",
+    "dev:integrated": "node examples/03-integrated.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

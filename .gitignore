@@ -1,0 +1,45 @@
+# 環境
+.env
+.env.local
+.env.*.local
+
+# 依賴
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 編譯輸出
+dist/
+build/
+*.js.map
+*.ts.js
+
+# 測試覆蓋
+coverage/
+*.lcov
+.nyc_output/
+
+# 日誌
+logs/
+*.log
+npm-debug.log*
+
+# 系統文件
+.DS_Store
+Thumbs.db
+
+# 臨時文件
+tmp/
+temp/
+*.tmp
+
+# 配置（可選）
+config/local.json
+config/secrets.json
